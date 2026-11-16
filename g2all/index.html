@@ -13,12 +13,12 @@ var fwVersion = isPS4 ? match[1] : "Unknown";
 var fwNum = parseFloat(fwVersion);
 
 function onScriptError() {
-    msgs.innerHTML = "Content not Found! - Clear Browser Data and Re-Install Cache ...";
+    msgs.innerHTML = "لم يتم العثور على المحتوى! - امسح بيانات المتصفح ثم أعد تثبيت ملفات التخزين المؤقت..";
 }
 
 if (!isPS4) {
     document.addEventListener("DOMContentLoaded", () => {
-        msgs.innerHTML = "Only for PS4 with Firmware 5.05 and 7.00 to 14.02";
+        msgs.innerHTML = "مخصص لأجهزة PS4 بإصدارات النظام 5.05 ومن 7.00 إلى 14.02 فقط.";
     });
 } else {
     if (window.applicationCache.status == '0') {
